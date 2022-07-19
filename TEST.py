@@ -1426,3 +1426,38 @@ from typing import List, Any
 #
 #
 # print(only_one_positive(-1, 0, -3, 5, -3))
+
+
+# def file_read(file_name):
+#     f = open(file_name, encoding='utf-8')
+#     print(f.read())
+#     f.close()
+#
+# file_read('kek.txt')
+
+# def create_file_with_numbers(n):
+#     with open(f"range_{n}.txt","w") as f:
+#         [f.write(str(i)+"\n") for i in range(1, n+1)]
+#
+#
+# create_file_with_numbers(4)
+
+# def longest_word_in_file(file_name):
+#     file = open(file_name, 'r', encoding='utf-8')
+#     max_world = ''
+#     for line in file:
+#         words = line.split()
+#         for word in words:
+#             word_without_punc = remove_punctuation(word)
+#             if len(word_without_punc) >= len(max_world):
+#                 max_world = word_without_punc
+#     file.close()
+#     return max_world
+#
+#
+# def remove_punctuation(word):
+#     from string import punctuation
+#     for punc in punctuation:
+#         if punc in word:
+#             word = word.replace(punc, '')
+#     return word
