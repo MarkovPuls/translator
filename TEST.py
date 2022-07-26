@@ -1305,7 +1305,6 @@ from typing import List, Any
 
 '''DEF'''
 
-
 # def check_password(a):
 #     digit = 0
 #     up = 0
@@ -1461,3 +1460,158 @@ from typing import List, Any
 #         if punc in word:
 #             word = word.replace(punc, '')
 #     return word
+
+# import json
+# with open('my.json', 'r') as file:
+#     data = json.load(file)
+
+# import json
+#
+# maxim = 0
+# maxim_name = ''
+# maxim_last = ''
+# with open('manager_sales.json', 'r') as file:
+#     data = json.load(file)
+#
+# for i in data:
+#     price = 0
+#     first = i['manager']['first_name']
+#     last = i['manager']['last_name']
+#     for a in i['cars']:
+#         price += a['price']
+#     # print(first, last, price)
+#     if price > maxim:
+#         maxim = price
+#         maxim_last = last
+#         maxim_name = first
+# print(maxim_name, maxim_last, maxim)
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# a = list(map(lambda x: x ** 2, numbers))
+# b = list(map(lambda x: x ** 3, numbers))
+# print(a, b, sep='\n')
+
+# print(*[list(map(func, numbers)) for func in [lambda x: x**2, lambda x: x**3]], sep='\n')
+
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# print(list(filter(lambda x: x % 2 == 0, numbers)))
+
+# numbers = [54, 71, 65, 51, 36, -82, -32, 61, -61, 92, 17, -68, -62, 40, 16, -49, -51, -38, 60, -24, -61, 3, -26, -46,
+#            -97, -28, 36, 7, 52, 56, -96, -69, 67, 76, 16, 36, 38, 74, 11, -87, 69, 69, -69, -61, 92, 67, -45, -26, 94,
+#            38, 27, -26, 10, 55, 28, -81, 53, -75, -32, -83, 38, 83, -40, -51, 88, 28, 76, 25, 84, -79, -69, -65, 6, 12,
+#            81, -58, -92, 44, -41, 60, -14, -65, 7, 64, -40, -25, -91, -23, -19, -40, -4, 36, 38, 28, -27, -28, 72, 47]
+
+# a = list(filter(lambda x: x < 0, numbers))
+# b = list(filter(lambda x: x == 0, numbers))
+# c = list(filter(lambda x: x > 0, numbers))
+# print(len(a), len(b), len(c))
+
+# print(*[len(list(filter(fnc, numbers))) for fnc in [lambda x: x < 0, lambda x: x == 0, lambda x: x > 0]])
+
+# days = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten', 'Eleven', 'Twelve']
+# print(*sorted(list(filter(lambda x: len(x) == 4 or x[0] == 'S', days))), sep='\n')
+
+# subject_marks = [('English', 88), ('Science', 90), ('Maths', 97), ('Physics', 93), ('History', 82)]
+# [print(*i) for i in sorted(subject_marks, key=lambda x: x[1])]
+
+
+# subject_marks = [('English', 88), ('Science', 90), ('Maths', 97),
+#                  ('Physics', 93), ('History', 82), ('French', 78),
+#                  ('Art', 58), ('Chemistry', 76), ('Programming', 91)]
+# [print(*i) for i in sorted(subject_marks, key=lambda x: (-x[1], x[0]))]
+
+# models = [{'make': 'Nokia', 'model': 216, 'color': 'Black'},
+#           {'make': 'Mi Max', 'model': 2, 'color': 'Gold'},
+#           {'make': 'Samsung', 'model': 7, 'color': 'Blue'},
+#           {'make': 'Apple', 'model': 10, 'color': 'Silver'},
+#           {'make': 'Oppo', 'model': 9, 'color': 'Red'},
+#           {'make': 'Huawei', 'model': 4, 'color': 'Grey'},
+#           {'make': 'Honor', 'model': 3, 'color': 'Black'}]
+#
+# [print('Производитель: ' + i['make'] +', модель: ' + str(i['model']) +', цвет: ' + i['color']) for i in sorted(models, key=lambda x: x['color'])]
+
+
+# from datetime import date
+# date_7_08_1996 = date(year=1996, month=8, day=7)
+# date_31_12_1981 = date(year=1981, month=12, day=31)
+# print(date_7_08_1996)
+# print(date_31_12_1981)
+
+# d = int(input())
+# m = int(input())
+# y = int(input())
+# a = date(year=y, month=m, day=d)
+# print(a)
+
+# from datetime import date
+#
+# my_date = date(2013, 6, 21)
+# print(my_date.month, my_date.year)
+
+# from datetime import date
+#
+# d = 20
+# m = 10
+# y = 1998
+# user_date = date(y, m, d)
+# print(user_date)
+# print(f'{user_date.day:02d}', f'{user_date.month:02d}', f'{user_date.year:04d}', sep='.')
+
+# a = int(input())
+# b = int(input())
+# print(f'Точка(x = {a}, y = {b})')
+
+# number_pi = 3.141592653589793
+# print(f'{number_pi = :.6f}')
+
+# a = float(input())
+# print(f'{a:.2f}')
+
+# n = 12345678912345
+#
+# print(f'{n:,d}')
+# print(f'{n:_d}')
+#
+# sep = '_'
+# print(f'{n:{sep}d}') # вложенная f-строка
+
+# print(f'Число Квадрат Куб')
+# for x in range(1, 11):
+#    print(f'{x} {x*x} {x*x*x}')
+#
+# # А теперь с выравниванием
+#
+# print(f'Число\t\tКвадрат\t\tКуб')
+# for x in range(1, 11):
+#    print(f'{x:2d}\t\t{x*x:3d}\t\t{x*x*x:4d}')
+#
+# a = int(input())
+# print(f'{a:010d}')
+
+
+# APPLES = .50
+# BREAD = 1.50
+# CHEESE = 2.25
+# num_apples = 3
+# num_bread = 10
+# num_cheese = 6
+# price_apples = num_apples * APPLES
+# price_bread = num_bread * BREAD
+# price_cheese = num_cheese * CHEESE
+# str_apples = 'Яблоки'
+# str_bread = 'Хлеб'
+# str_сheese = 'Сыр'
+# total = price_bread + price_cheese + price_apples
+# print(f'{"Список покупок":^30s}')
+# print(f'{"=" * 30}')
+# print(f'{str_apples:10s}{num_apples:10d}\t${price_apples:>5.2f}')
+# print(f'{str_bread:10s}{num_bread:10d}\t${price_bread:>5.2f}')
+# print(f'{str_сheese:10s}{num_cheese:10d}\t${price_cheese:>5.2f}')
+# print(f'{"Total:":>20s}\t${total:>5.2f}')
+
+
+from datetime import date
+print(date.min)
+
+a = date(2015, 8, 21)
+print(a.min)
