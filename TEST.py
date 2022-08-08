@@ -1305,6 +1305,7 @@ from typing import List, Any
 
 '''DEF'''
 
+
 # def check_password(a):
 #     digit = 0
 #     up = 0
@@ -1610,8 +1611,37 @@ from typing import List, Any
 # print(f'{"Total:":>20s}\t${total:>5.2f}')
 
 
-from datetime import date
-print(date.min)
+# from datetime import date
+# print(date.min)
+#
+# a = date(2015, 8, 21)
+# print(a.min)
 
-a = date(2015, 8, 21)
-print(a.min)
+# hello = 'Hello World!'
+# print(type(hello))
+#
+# my_list = [2, 4, 43]
+# print(type(my_list))
+#
+# print(type(True))
+# print(type(3))
+# print(type(6 / 3))
+#
+# print(hello, 'Это строка?', isinstance(hello, str))
+
+
+# class Car:
+#     """Класс для определения характеристик машин"""
+#     pass
+#
+#
+# print(Car.__doc__)  # Результат: Класс для определения характеристик машин
+
+
+# class Contact:
+#     name = 'Barak'
+#     phone_number = '+1 202 345 4564'
+#
+#
+# print(Contact.__dict__)
+# print(getattr(Contact, 'name'))

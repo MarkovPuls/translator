@@ -110,6 +110,7 @@ ai_quotes = [
 
 # Класс содержащий CRUID-функциональность (create, read, update и delete).
 class Quote(Resource):
+    """Класс содержащий CRUID-функциональность (create, read, update и delete)."""
 
     @staticmethod
     def get(id_class=0):
