@@ -1645,3 +1645,63 @@ from typing import List, Any
 #
 # print(Contact.__dict__)
 # print(getattr(Contact, 'name'))
+
+# class Car:
+#     """Класс для определения характеристик машин"""
+#     model = "VAZ"
+#     engine = 1.6
+#     horse_power = 100
+#     color = ''
+#
+#     def drive(self):
+#         print(f"Let's go {self.model} {self.engine}")
+#
+#     def power(self):
+#         print(f'Мощность {self.model} - {self.horse_power} лошадиных сил')
+#
+#     def colors(self):
+#         print(f'Цвет {self.model} - {self.color}')
+#
+#     def set_values(self, new_model, new_engine, new_horse_power, new_color):
+#         self.model = new_model
+#         self.engine = new_engine
+#         self.horse_power = new_horse_power
+#         self.color = new_color
+#
+#
+# auto = Car()
+# auto.drive()  # Let's go VAZ 1.6
+# auto.model = 'BMW'  # Поменяем машину
+# auto.drive()  # Let's go BMW 1.6
+# auto.power()  # Мощность BMW - 100 лошадиных сил
+# auto.horse_power = 350  # Добавим лошадок к мощности
+# auto.power()  # Мощность BMW - 350 лошадиных сил
+# auto.set_values('AUDI', 5, 300, 'blue')
+# auto.drive()  # Let's go AUDI 5
+# auto.power()  # Мощность AUDI - 300 лошадиных сил
+
+# class Lion:
+#     def roar(self):
+#         print("Rrrrrrr!!!")
+#
+#
+# simba = Lion()
+# simba.roar()  # печатает Rrrrrrr!!!
+
+class Robot:
+    def say_hello(self):
+        print('Hello, human! My name is C-3PO')
+
+    def say_bye(self):
+        print('See u later alligator')
+
+
+c3po = Robot()
+c3po.say_hello()  # печатает У робота нет имени
+c3po.set_name('R2D2')
+c3po.say_hello()  # печатает Hello, human! My name is R2D2
+c3po.say_bye()  # печатает See u later alligator
+
+r = Robot()
+r.set_name('Chappy')
+r.say_hello()  # печатает Hello, human! My name is Chappy
